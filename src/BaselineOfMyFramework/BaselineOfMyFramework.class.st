@@ -13,6 +13,8 @@ BaselineOfMyFramework >> baseline: spec [
 			spec
 				baseline: 'MyFrameworkCore' with: [
 					spec repository: MyRepository, '/MyFramework/src' ];
+				baseline: 'MyFrameworkExtra' with: [
+					spec repository: MyRepository, '/MyFramework/src' ];
 				baseline: 'MyLibraryCore' with: [
 					spec repository: MyRepository, '/MyLibrary/src' ];
 				baseline: 'MyLibraryB' with: [
@@ -20,5 +22,5 @@ BaselineOfMyFramework >> baseline: spec [
 
 			spec
 				package: 'MyFramework' with: [
-					spec requires: #(#'MyFrameworkCore' #'MyLibraryCore' #'MyLibraryB') ] ]
+					spec requires: #(#'MyFrameworkCore' #'MyFrameworkExtra' #'MyLibraryCore' #'MyLibraryB') ] ]
 ]

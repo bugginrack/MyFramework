@@ -10,6 +10,11 @@ MyFrameworkClass >> useCore [
 ]
 
 { #category : #accessing }
+MyFrameworkClass >> useFrameworkExtra [
+	^ MyFrameworkExtraClass new
+]
+
+{ #category : #accessing }
 MyFrameworkClass >> useLibraryB [
 	^ MyLibraryClassB new
 ]
